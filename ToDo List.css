@@ -1,0 +1,87 @@
+body{
+			background-color:#e0dfdf;
+			display:flex;
+			flex-direction:column; /* etgah el flex */
+			justify-content:space-around; /* mortabita b el flex direction eza cant row or column*/
+			/* space-between bt2sem el msa7a ma bain el items lkn around ma bin el items w el dev ely shailhom*/
+			align-items:center; /*bit7km fe wad3it el aitem elly fe el body mslan*/
+}
+#todo_container{
+	margin-top:3em;
+	position:sticky;
+	top:0;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+}
+#todo_container textarea{
+	border:0;
+	height:30px;
+	width:500px;
+	background-color:#fff;
+	color:#008080;
+	border-radius:5px;
+	padding-left:5px;
+	padding-right:5px;
+	border:3px solid #920909;
+	margin-right:0.5em;
+}
+#todo_container button{
+	height:40px;
+	border:0;
+	background-color:#920909;
+	color:#fff;
+	font-size:18px;
+	padding:0 15px;
+	border-radius:5px;
+	cursor:pointer; /* type of the pointer to mouse*/
+	margin-left:0.5em;
+}
+#todo_container button:hover{
+	background-color:#f10e0e;
+}
+#todo_container button:active{
+	background-color:green;
+}
+#todo_list{
+	width:40%;
+	text-align:center;
+	margin:3em;
+}
+#todo_list .todo_list_item{
+	word-break:break-word; /* bi5li el klam 3la ad el div*/
+	height:auto; /* 34an elklam lo ktir mi5rg4 mn el div w ytoal dynamic m3ak*/
+	background-color:#008080;
+	color:#fff;
+	padding:15px;
+	line-height:1.5;
+	font-family:"Open Sans", sans-serif,"new time roman";
+	margin-bottom:0.7em;/* kda sabta 3la kol el devices w haigib el de3f (dynamic)*/
+	box-shadow:3px -3px 5px #aaa;/* right or lift(-) - bottom(-) or top - opcitey - color*/
+	border-radius:5px;
+}
+#todo_list .todo_list_item:hover{
+	background-color:#000;
+	color:#008080;
+}
+
+
+.todo_list_item{
+	transition: transform 0.3s ease-in-out;
+}
+.todo_list_item.animate{
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
